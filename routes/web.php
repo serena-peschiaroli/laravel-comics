@@ -13,23 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
-    $navItems = [
-        ['title' => 'PERSONAGGI'],
-        ['title' => 'COMICS'],
-        ['title' => 'FILM'],
-        ['title' => 'TV'],
-        ['title' => 'GIOCHI'],
-        ['title' => 'LINK'],
-        ['title' => 'LINK'],
-        ['title' => 'LINK'],
-        ['title' => 'SHOP'],
-
-
-    ];
-    return view('home', compact('navItems'));
+    return view('home');
 })->name('home');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $current_series = config('db.current_series');
+    return view('comics', compact('current_series'));
 })->name('comics');
+
