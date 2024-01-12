@@ -21,6 +21,9 @@ Route::get('/', function () {
 
 Route::get('/comics', function () {
     $current_series = config('db.current_series');
-    return view('comics', compact('current_series'));
+    $shop_online = config('db.shop_online');
+    return view('comics', compact('current_series', 'shop_online'));
 })->name('comics');
+
+
 

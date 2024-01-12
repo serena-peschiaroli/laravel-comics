@@ -78,8 +78,33 @@ return [
             "series" => "Catwoman",
             "type" => "graphic novel"
         ]
+        ],
+    "shop_online"=> [
+        [
+            'image' => 'public/img/buy-comics-digital-comics.png',
+            'sub' => 'lorem ipsum',
+        ],
+        [
+            'image' => 'public/img/buy-comics-merchandise.png',
+            'sub' => 'lorem ipsum',
+        ],
+        [
+            'image' => 'public/img/buy-comics-subscriptions.png',
+            'sub' => 'lorem ipsum',
+        ],
+        [
+            'image' => 'public/img/buy-comics-shop-locator.png',
+            'sub' => 'lorem ipsum',
+        ],
+        [
+            'image' => 'public/img/buy-dc-power-visa.svg',
+            'sub' => 'lorem ipsum',
+        ],
+
     ]
+
 ];
+
 
 
 ?>
