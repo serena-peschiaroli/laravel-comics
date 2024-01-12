@@ -2,10 +2,12 @@
 
 @section('content')
 
-<section class="jumbotron">
-    <a href="" class="btn btn-primary"> CURRENT SERIES </a>
+<section>
+    <div class="jumbotron">
+        <a href="" class="btn btn-primary jmb-btn ml-2"> CURRENT SERIES </a>
+    </div>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row row-cols-4">
             @foreach ($current_series as $series)
             <div class="col">
