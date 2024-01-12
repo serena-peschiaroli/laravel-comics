@@ -14,9 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $navItems = [
+        ['title' => 'PERSONAGGI'],
+        ['title' => 'COMICS'],
+        ['title' => 'FILM'],
+        ['title' => 'TV'],
+        ['title' => 'GIOCHI'],
+        ['title' => 'LINK'],
+        ['title' => 'LINK'],
+        ['title' => 'LINK'],
+        ['title' => 'SHOP'],
+
+
+    ];
+    return view('home', compact('navItems'));
 })->name('home');
 
-Route::get('/comics' function () {
+Route::get('/comics', function () {
     return view('comics');
 })->name('comics');
