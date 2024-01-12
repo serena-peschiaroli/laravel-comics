@@ -23,6 +23,11 @@ section {
 
 ._ms-col {
     height: 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
     ._ms-card-img {
         height: 50px;

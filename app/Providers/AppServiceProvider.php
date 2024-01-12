@@ -31,7 +31,51 @@ class AppServiceProvider extends ServiceProvider
                 ['title' => 'SHOP', 'url' => '#'],
             ];
 
-            $view->with('navItems', $navItems);
+            $footerItems = [
+                'Item1' => [
+                    'title' => 'title1',
+                    'links' => ['link1', 'link2', 'link3', 'link4', 'link5', 'link6', 'link7'],
+                ],
+                'Item2' => [
+                    'title' => "title2",
+                    'links' => ["link1", "link2", "link3", "link4", "link5", "link6", "link7", "link8", "link9", "link10"],
+                ],
+                'Item3' => [
+                    'title' => "title3",
+                    'links' => ["link1", "link2", "link3", "link4", "link5"],
+                ],
+                'Item4' => [
+                    'title' => "title4",
+                    'links' => ["link1", "link2"],
+                ],
+            ];
+            $socialIcons = [
+                [
+                    'name' => 'facebook',
+                    'icon' => 'public/img/footer-facebook.png',
+                ],
+                [
+                    'name' => 'periscope',
+                    'icon' => 'public/img/footer-periscope.png',
+                ],
+                [
+                    'name' => 'pinterest',
+                    'icon' => 'public/img/footer-pinterest.png',
+                ],
+                [
+                    'name' => 'twitter',
+                    'icon' => 'public/img/footer-twitter.png',
+                ],
+                [
+                    'name' => 'youtube',
+                    'icon' => 'public/img/footer-youtube.png',
+                ],
+            ];
+
+
+            // Share both navItems and footerItems with all views
+            $view->with(compact('navItems', 'footerItems', 'socialIcons'));
         });
     }
+    
 }

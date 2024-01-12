@@ -38,7 +38,7 @@
         <div class="container">
             <div class="row d-flex">
                 @foreach ($shop_online as $item)
-                    <div class="col _ms-col p-2 text-center">
+                    <div class="col _ms-col p-2">
                        
                             <img src="{{ Vite::asset($item['image']) }}" alt="Image description" class="_ms-card-img">
                             <p>{{ $item['sub'] }}</p>
