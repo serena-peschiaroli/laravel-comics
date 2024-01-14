@@ -10,7 +10,7 @@
                 <ul class="nav">
                     @foreach ($navItems as $item)
                         <li class="nav-item">
-                         <a href="{{ $item['url'] }}" class="nav-link">{{ $item['title'] }}</a>
+                         <a href="{{ $item['url'] }}" class="nav-link {{Request::url() == url($item['url']) ? 'active' : '' }}">{{ $item['title'] }}</a>
                         </li>
                     @endforeach
                 </ul>

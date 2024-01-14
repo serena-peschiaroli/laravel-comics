@@ -1,5 +1,39 @@
+footer {
+    color: white;
+}
+
+
+
+
 .footer-top {
     background-image: url(/public/img/footer-bg.jpg);
     background-position: center;
     background-size: contain;
 }
+
+.ms_footer_col {
+    min-height: 400px;
+    background-image: url(/public/img/dc-logo-bg.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.footer-btm {
+    background-color: rgb(26, 25, 25);
+    padding: 2rem;
+
+    .login-btn {
+            border: 2px solid blue;
+            color: white;
+    
+            &:hover {
+                background-color: rgb(97, 97, 117);
+                border: white;
+            }
+        }
+}
+    

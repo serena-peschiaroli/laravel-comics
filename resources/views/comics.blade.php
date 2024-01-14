@@ -8,10 +8,10 @@
     </div>
 
     <div class="container mt-5 p-3">
-        <div class="row row-cols-4 p-1 align-items-stretch">
+        <div class="row row-cols-6 p-1">
             @foreach ($current_series as $series)
-            <div class="col align-items-stretch">
-                <div class="card">
+            <div class="col d-flex justify-content-center align-items-stretch p-1">
+                <div class="card d-flex">
                     <img src="{{ $series['thumb'] }}" class="card-img-top" alt="{{ $series['series'] }}">
                     <div class="card-body">
                         <h5 class="card-title">{{ $series['series'] }}</h5>
@@ -39,9 +39,11 @@
             <div class="row d-flex">
                 @foreach ($shop_online as $item)
                     <div class="col _ms-col p-2">
+                        
                        
                             <img src="{{ Vite::asset($item['image']) }}" alt="Image description" class="_ms-card-img">
                             <p>{{ $item['sub'] }}</p>
+                       
                        
                     </div>
                 @endforeach
