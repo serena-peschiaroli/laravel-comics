@@ -11,6 +11,7 @@
                     @foreach ($navItems as $item)
                         <li class="nav-item">
                             {{-- classe condizionale che richiama ulr() metodo su facade Reqyest--}}
+                            {{-- meglio usare Route::currentRouteName () === $link['route_name'] ?  etc per non vincolare url e non avere problemi--}}
                          <a href="{{ $item['url'] }}" class="nav-link {{Request::url() == url($item['url']) ? 'active' : '' }}">{{ $item['title'] }}</a>
                         </li>
                     @endforeach
