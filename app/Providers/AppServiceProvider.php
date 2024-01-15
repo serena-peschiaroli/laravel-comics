@@ -73,7 +73,7 @@ class AppServiceProvider extends ServiceProvider
             ];
 
 
-            // Share both navItems and footerItems with all views
+            // condividi tutti gli items con tutte le view
             $view->with(compact('navItems', 'footerItems', 'socialIcons'));
         });
     }

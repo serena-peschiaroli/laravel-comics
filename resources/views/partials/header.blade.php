@@ -10,6 +10,7 @@
                 <ul class="nav">
                     @foreach ($navItems as $item)
                         <li class="nav-item">
+                            {{-- classe condizionale che richiama ulr() metodo su facade Reqyest--}}
                          <a href="{{ $item['url'] }}" class="nav-link {{Request::url() == url($item['url']) ? 'active' : '' }}">{{ $item['title'] }}</a>
                         </li>
                     @endforeach
